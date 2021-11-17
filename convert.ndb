@@ -1,0 +1,44 @@
+NDB006
+The number of symbol table entries is: 1
+The length of the symbol table is: 13
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+
+The number of name info structs is : 32
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	"<R?c	!	8	6	A0	!	A0	"0
+#	"<R?c	!	8	6	A1	!	A1	"/
+$	"<R?c	!	8	6	A2	!	A2	".
+%	"<R?c	!	8	6	A3	!	A3	"-
+&	"<R?c	!	8	6	A4	!	A4	",
+'	"<R?c	!	8	6	A5	!	A5	"+
+(	"<R?c	!	8	6	A6	!	A6	"*
+)	"<R?c	!	8	6	A7	!	A7	")
+*	IeE[	!	7	6	I10	"&
++	IeE[	!	7	6	I11	"%
+,	IeE[	!	7	6	I8	"(
+-	IeE[	!	7	6	I9	"'
+.	"?%_n	!	5	6	1	"	IRCODE0	!	IRCODE0	~
+/	"?%_n	!	5	6	1	#	IRCODE1	!	IRCODE1	}
+0	"?%_n	!	5	6	1	*	IRCODE10	!	IRCODE10	t
+1	"?%_n	!	5	6	1	+	IRCODE11	!	IRCODE11	s
+2	"?%_n	!	5	6	1	>	IRCODE12	!	IRCODE12	r
+3	"?%_n	!	5	6	1	?	IRCODE13	!	IRCODE13	q
+4	"?%_n	!	5	6	1	@	IRCODE14	!	IRCODE14	p
+5	"?%_n	!	5	6	1	A	IRCODE15	!	IRCODE15	o
+6	"?%_n	!	5	6	1	$	IRCODE2	!	IRCODE2	|
+7	"?%_n	!	5	6	1	%	IRCODE3	!	IRCODE3	{
+8	"?%_n	!	5	6	1	&	IRCODE4	!	IRCODE4	z
+9	"?%_n	!	5	6	1	'	IRCODE5	!	IRCODE5	y
+:	"?%_n	!	5	6	1	(	IRCODE6	!	IRCODE6	x
+;	"?%_n	!	5	6	1	)	IRCODE7	!	IRCODE7	w
+<	"?%_n	!	5	6	1	,	IRCODE8	!	IRCODE8	v
+=	"?%_n	!	5	6	1	-	IRCODE9	!	IRCODE9	u
+>	"<R?c	!	6	10	OP0	!	OP0	"$
+?	"<R?c	!	6	10	OP1	!	OP1	"#
+@	"<R?c	!	6	10	OP2	!	OP2	""
+A	"<R?c	!	6	10	OP3	!	OP3	"!

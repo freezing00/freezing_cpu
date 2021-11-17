@@ -1,0 +1,517 @@
+Project Information                             f:\files\freezing-cpu\mux4.rpt
+
+MAX+plus II Compiler Report File
+Version 10.2 07/10/2002
+Compiled: 07/07/2021 02:25:18
+
+Copyright (C) 1988-2002 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+MUX4
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+mux4      EPM7064LC68-7    34       8        0      8       0           12 %
+
+User Pins:                 34       8        0  
+
+
+
+Device-Specific Information:                    f:\files\freezing-cpu\mux4.rpt
+mux4
+
+***** Logic for device 'mux4' compiled without errors.
+
+
+
+
+Device: EPM7064LC68-7
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+    MultiVolt I/O                              = OFF
+
+
+
+Device-Specific Information:                    f:\files\freezing-cpu\mux4.rpt
+mux4
+
+** ERROR SUMMARY **
+
+Info: Chip 'mux4' in device 'EPM7064LC68-7' has less than 20% of pins available for future logic changes -- if your project is likely to change, Altera recommends using a larger device
+                                                  R  R     R  R  
+                                                  E  E     E  E  
+                                V                 S  S     S  S  
+                                C                 E  E  V  E  E  
+                                C                 R  R  C  R  R  
+              X  X  X  G  X  X  I  G  G  G  G  G  V  V  C  V  V  
+              1  1  1  N  1  1  N  N  N  N  N  N  E  E  I  E  E  
+              5  4  3  D  2  1  T  D  D  D  D  D  D  D  O  D  D  
+            -----------------------------------------------------_ 
+          /   9  8  7  6  5  4  3  2  1 68 67 66 65 64 63 62 61   | 
+     X16 | 10                                                  60 | W7 
+   VCCIO | 11                                                  59 | X25 
+     X17 | 12                                                  58 | GND 
+     X20 | 13                                                  57 | W5 
+     X21 | 14                                                  56 | W4 
+     X22 | 15                                                  55 | W3 
+     GND | 16                                                  54 | W2 
+       B | 17                                                  53 | VCCIO 
+       A | 18                  EPM7064LC68-7                   52 | W1 
+     X37 | 19                                                  51 | W0 
+     X31 | 20                                                  50 | RESERVED 
+   VCCIO | 21                                                  49 | RESERVED 
+     X32 | 22                                                  48 | GND 
+     X06 | 23                                                  47 | X05 
+     X07 | 24                                                  46 | X26 
+     X33 | 25                                                  45 | X27 
+     GND | 26                                                  44 | X04 
+         |_  27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43  _| 
+           ------------------------------------------------------ 
+              X  X  X  X  V  X  X  G  V  X  X  G  W  X  X  X  V  
+              3  3  3  2  C  2  1  N  C  0  3  N  6  0  0  0  C  
+              4  5  6  4  C  3  0  D  C  0  0  D     1  2  3  C  
+                          I           I                       I  
+                          O           N                       O  
+                                      T                          
+                                                                 
+                                                                 
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+
+
+Device-Specific Information:                    f:\files\freezing-cpu\mux4.rpt
+mux4
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16     0/16(  0%)  12/12(100%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32     0/16(  0%)  12/12(100%)   0/16(  0%)   0/36(  0%) 
+C:    LC33 - LC48     1/16(  6%)  10/12( 83%)   0/16(  0%)   6/36( 16%) 
+D:    LC49 - LC64     7/16( 43%)   8/12( 66%)   0/16(  0%)  30/36( 83%) 
+
+
+Total dedicated input pins used:                 0/4      (  0%)
+Total I/O pins used:                            42/48     ( 87%)
+Total logic cells used:                          8/64     ( 12%)
+Total shareable expanders used:                  0/64     (  0%)
+Total Turbo logic cells used:                    8/64     ( 12%)
+Total shareable expanders not available (n/a):   0/64     (  0%)
+Average fan-in:                                  6.00
+Total fan-in:                                    48
+
+Total input pins required:                      34
+Total output pins required:                      8
+Total bidirectional pins required:               0
+Total logic cells required:                      8
+Total flipflops required:                        0
+Total product terms required:                   32
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:           0
+
+Synthesized logic cells:                         0/  64   (  0%)
+
+
+
+Device-Specific Information:                    f:\files\freezing-cpu\mux4.rpt
+mux4
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  18    (1)  (A)      INPUT               0      0   0    0    0    8    0  A
+  17    (3)  (A)      INPUT               0      0   0    0    0    8    0  B
+  36   (33)  (C)      INPUT               0      0   0    0    0    1    0  X00
+  40   (37)  (C)      INPUT               0      0   0    0    0    1    0  X01
+  41   (38)  (C)      INPUT               0      0   0    0    0    1    0  X02
+  42   (40)  (C)      INPUT               0      0   0    0    0    1    0  X03
+  44   (41)  (C)      INPUT               0      0   0    0    0    1    0  X04
+  47   (45)  (C)      INPUT               0      0   0    0    0    1    0  X05
+  23   (28)  (B)      INPUT               0      0   0    0    0    1    0  X06
+  24   (27)  (B)      INPUT               0      0   0    0    0    1    0  X07
+  33   (17)  (B)      INPUT               0      0   0    0    0    1    0  X10
+   4   (16)  (A)      INPUT               0      0   0    0    0    1    0  X11
+   5   (14)  (A)      INPUT               0      0   0    0    0    1    0  X12
+   7   (13)  (A)      INPUT               0      0   0    0    0    1    0  X13
+   8   (12)  (A)      INPUT               0      0   0    0    0    1    0  X14
+   9   (11)  (A)      INPUT               0      0   0    0    0    1    0  X15
+  10    (9)  (A)      INPUT               0      0   0    0    0    1    0  X16
+  12    (8)  (A)      INPUT               0      0   0    0    0    1    0  X17
+  13    (6)  (A)      INPUT               0      0   0    0    0    1    0  X20
+  14    (5)  (A)      INPUT               0      0   0    0    0    1    0  X21
+  15    (4)  (A)      INPUT               0      0   0    0    0    1    0  X22
+  32   (19)  (B)      INPUT               0      0   0    0    0    1    0  X23
+  30   (20)  (B)      INPUT               0      0   0    0    0    1    0  X24
+  59   (57)  (D)      INPUT               0      0   0    0    0    1    0  X25
+  46   (44)  (C)      INPUT               0      0   0    0    0    1    0  X26
+  45   (43)  (C)      INPUT               0      0   0    0    0    1    0  X27
+  37   (35)  (C)      INPUT               0      0   0    0    0    1    0  X30
+  20   (30)  (B)      INPUT               0      0   0    0    0    1    0  X31
+  22   (29)  (B)      INPUT               0      0   0    0    0    1    0  X32
+  25   (25)  (B)      INPUT               0      0   0    0    0    1    0  X33
+  27   (24)  (B)      INPUT               0      0   0    0    0    1    0  X34
+  28   (22)  (B)      INPUT               0      0   0    0    0    1    0  X35
+  29   (21)  (B)      INPUT               0      0   0    0    0    1    0  X36
+  19   (32)  (B)      INPUT               0      0   0    0    0    1    0  X37
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                    f:\files\freezing-cpu\mux4.rpt
+mux4
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  51     49    D     OUTPUT      t        0      0   0    6    0    0    0  W0
+  52     51    D     OUTPUT      t        0      0   0    6    0    0    0  W1
+  54     52    D     OUTPUT      t        0      0   0    6    0    0    0  W2
+  55     53    D     OUTPUT      t        0      0   0    6    0    0    0  W3
+  56     54    D     OUTPUT      t        0      0   0    6    0    0    0  W4
+  57     56    D     OUTPUT      t        0      0   0    6    0    0    0  W5
+  39     36    C     OUTPUT      t        0      0   0    6    0    0    0  W6
+  60     59    D     OUTPUT      t        0      0   0    6    0    0    0  W7
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                    f:\files\freezing-cpu\mux4.rpt
+mux4
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'C':
+
+           Logic cells placed in LAB 'C'
+        +- LC36 W6
+        | 
+        |   Other LABs fed by signals
+        |   that feed LAB 'C'
+LC      | | A B C D |     Logic cells that feed LAB 'C':
+
+Pin
+18   -> * | - - * * | <-- A
+17   -> * | - - * * | <-- B
+23   -> * | - - * - | <-- X06
+10   -> * | - - * - | <-- X16
+46   -> * | - - * - | <-- X26
+29   -> * | - - * - | <-- X36
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                    f:\files\freezing-cpu\mux4.rpt
+mux4
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'D':
+
+                       Logic cells placed in LAB 'D'
+        +------------- LC49 W0
+        | +----------- LC51 W1
+        | | +--------- LC52 W2
+        | | | +------- LC53 W3
+        | | | | +----- LC54 W4
+        | | | | | +--- LC56 W5
+        | | | | | | +- LC59 W7
+        | | | | | | | 
+        | | | | | | |   Other LABs fed by signals
+        | | | | | | |   that feed LAB 'D'
+LC      | | | | | | | | A B C D |     Logic cells that feed LAB 'D':
+
+Pin
+18   -> * * * * * * * | - - * * | <-- A
+17   -> * * * * * * * | - - * * | <-- B
+36   -> * - - - - - - | - - - * | <-- X00
+40   -> - * - - - - - | - - - * | <-- X01
+41   -> - - * - - - - | - - - * | <-- X02
+42   -> - - - * - - - | - - - * | <-- X03
+44   -> - - - - * - - | - - - * | <-- X04
+47   -> - - - - - * - | - - - * | <-- X05
+24   -> - - - - - - * | - - - * | <-- X07
+33   -> * - - - - - - | - - - * | <-- X10
+4    -> - * - - - - - | - - - * | <-- X11
+5    -> - - * - - - - | - - - * | <-- X12
+7    -> - - - * - - - | - - - * | <-- X13
+8    -> - - - - * - - | - - - * | <-- X14
+9    -> - - - - - * - | - - - * | <-- X15
+12   -> - - - - - - * | - - - * | <-- X17
+13   -> * - - - - - - | - - - * | <-- X20
+14   -> - * - - - - - | - - - * | <-- X21
+15   -> - - * - - - - | - - - * | <-- X22
+32   -> - - - * - - - | - - - * | <-- X23
+30   -> - - - - * - - | - - - * | <-- X24
+59   -> - - - - - * - | - - - * | <-- X25
+45   -> - - - - - - * | - - - * | <-- X27
+37   -> * - - - - - - | - - - * | <-- X30
+20   -> - * - - - - - | - - - * | <-- X31
+22   -> - - * - - - - | - - - * | <-- X32
+25   -> - - - * - - - | - - - * | <-- X33
+27   -> - - - - * - - | - - - * | <-- X34
+28   -> - - - - - * - | - - - * | <-- X35
+19   -> - - - - - - * | - - - * | <-- X37
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                    f:\files\freezing-cpu\mux4.rpt
+mux4
+
+** EQUATIONS **
+
+A        : INPUT;
+B        : INPUT;
+X00      : INPUT;
+X01      : INPUT;
+X02      : INPUT;
+X03      : INPUT;
+X04      : INPUT;
+X05      : INPUT;
+X06      : INPUT;
+X07      : INPUT;
+X10      : INPUT;
+X11      : INPUT;
+X12      : INPUT;
+X13      : INPUT;
+X14      : INPUT;
+X15      : INPUT;
+X16      : INPUT;
+X17      : INPUT;
+X20      : INPUT;
+X21      : INPUT;
+X22      : INPUT;
+X23      : INPUT;
+X24      : INPUT;
+X25      : INPUT;
+X26      : INPUT;
+X27      : INPUT;
+X30      : INPUT;
+X31      : INPUT;
+X32      : INPUT;
+X33      : INPUT;
+X34      : INPUT;
+X35      : INPUT;
+X36      : INPUT;
+X37      : INPUT;
+
+-- Node name is 'W0' 
+-- Equation name is 'W0', location is LC049, type is output.
+ W0      = LCELL( _EQ001 $  GND);
+  _EQ001 =  A &  B &  X30
+         #  A & !B &  X20
+         # !A &  B &  X10
+         # !A & !B &  X00;
+
+-- Node name is 'W1' 
+-- Equation name is 'W1', location is LC051, type is output.
+ W1      = LCELL( _EQ002 $  GND);
+  _EQ002 =  A &  B &  X31
+         #  A & !B &  X21
+         # !A &  B &  X11
+         # !A & !B &  X01;
+
+-- Node name is 'W2' 
+-- Equation name is 'W2', location is LC052, type is output.
+ W2      = LCELL( _EQ003 $  GND);
+  _EQ003 =  A &  B &  X32
+         #  A & !B &  X22
+         # !A &  B &  X12
+         # !A & !B &  X02;
+
+-- Node name is 'W3' 
+-- Equation name is 'W3', location is LC053, type is output.
+ W3      = LCELL( _EQ004 $  GND);
+  _EQ004 =  A &  B &  X33
+         #  A & !B &  X23
+         # !A &  B &  X13
+         # !A & !B &  X03;
+
+-- Node name is 'W4' 
+-- Equation name is 'W4', location is LC054, type is output.
+ W4      = LCELL( _EQ005 $  GND);
+  _EQ005 =  A &  B &  X34
+         #  A & !B &  X24
+         # !A &  B &  X14
+         # !A & !B &  X04;
+
+-- Node name is 'W5' 
+-- Equation name is 'W5', location is LC056, type is output.
+ W5      = LCELL( _EQ006 $  GND);
+  _EQ006 =  A &  B &  X35
+         #  A & !B &  X25
+         # !A &  B &  X15
+         # !A & !B &  X05;
+
+-- Node name is 'W6' 
+-- Equation name is 'W6', location is LC036, type is output.
+ W6      = LCELL( _EQ007 $  GND);
+  _EQ007 =  A &  B &  X36
+         #  A & !B &  X26
+         # !A &  B &  X16
+         # !A & !B &  X06;
+
+-- Node name is 'W7' 
+-- Equation name is 'W7', location is LC059, type is output.
+ W7      = LCELL( _EQ008 $  GND);
+  _EQ008 =  A &  B &  X37
+         #  A & !B &  X27
+         # !A &  B &  X17
+         # !A & !B &  X07;
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information                             f:\files\freezing-cpu\mux4.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = off
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:01
+   Fitter                                 00:00:00
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:00
+   --------------------------             --------
+   Total Time                             00:00:01
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 3,682K

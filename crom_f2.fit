@@ -1,0 +1,72 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.2 07/10/2002            
+-- Compiled: 07/07/2021 14:58:27      
+
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "crom_f2"
+BEGIN
+
+    DEVICE = "EP1K10TC100-1";
+
+    "D0"                           : INPUT_PIN  = 38     ;
+    "D1"                           : INPUT_PIN  = 40     ;
+    "D2"                           : INPUT_PIN  = 89     ;
+    "D3"                           : INPUT_PIN  = 91     ;
+    "D4"                           : INPUT_PIN  = 39     ;
+    "D5"                           : INPUT_PIN  = 90     ;
+    "UA0"                          : OUTPUT_PIN = 13     ;
+    "UA1"                          : OUTPUT_PIN = 9      ;
+    "UA2"                          : OUTPUT_PIN = 63     ;
+    "UA3"                          : OUTPUT_PIN = 58     ;
+    "UA4"                          : OUTPUT_PIN = 65     ;
+    "UA5"                          : OUTPUT_PIN = 55     ;
+    "UA0~1"                        : LOCATION   = LC1_B21;
+    "UA1~1"                        : LOCATION   = LC7_A21;
+    "UA2~1"                        : LOCATION   = LC4_B6 ;
+    "UA3~1"                        : LOCATION   = LC1_C5 ;
+    "UA4~1"                        : LOCATION   = LC1_B1 ;
+    "UA5~1"                        : LOCATION   = LC6_C2 ;
+
+END;
+
+INTERNAL_INFO "crom_f2"
+BEGIN
+	DEVICE = EP1K10TC100-1;
+    OD2P38  : LORAX = "1:FB2|2:FH2R1,PA6R1C20->LC1_B21||";
+    OD3P40  : LORAX = "1:FB3|2:FH3R0,PA5R0C20->LC7_A21||";
+    OD1P89  : LORAX = "1:FB1|2:FH1R1,PA20R1C5->LC4_B6||";
+    OD0P91  : LORAX = "1:FB0|2:FH0R2,PA0R2C4->LC1_C5||";
+    OD5P39  : LORAX = "1:FB5|2:CH1R1,PA7R1C0->LC1_B1||";
+    OD4P90  : LORAX = "1:FB4|2:CH0R2,PA19R2C1->LC6_C2||";
+    LC1_B21 : LORAX = "1:MSW0R1C21,HHR19R1->OH0R1P13|";
+    LC7_A21 : LORAX = "1:MSW6R0C20,HHR40R0->OH6R0P9|";
+    LC4_B6  : LORAX = "1:MSW3R1C5,HHL10R1->OH11R1P63|";
+    LC1_C5  : LORAX = "1:MSW0R2C5,HHL20R2->OH8R2P58|";
+    LC1_B1  : LORAX = "1:MSW0R1C1,HHL23R1->OH8R1P65|";
+    LC6_C2  : LORAX = "1:MSW6R2C0,HHL29R2->OH14R2P55|";
+	LC1_B21 : LORAX2 = "X, X, X, OD2P38";
+	LC7_A21 : LORAX2 = "X, X, X, OD3P40";
+	LC4_B6  : LORAX2 = "X, X, X, OD1P89";
+	LC1_C5  : LORAX2 = "X, X, X, OD0P91";
+	LC1_B1  : LORAX2 = "X, X, X, OD5P39";
+	LC6_C2  : LORAX2 = "X, X, X, OD4P90";
+END;

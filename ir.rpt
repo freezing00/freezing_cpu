@@ -1,0 +1,454 @@
+Project Information                               f:\files\freezing-cpu\ir.rpt
+
+MAX+plus II Compiler Report File
+Version 10.2 07/10/2002
+Compiled: 07/07/2021 02:26:46
+
+Copyright (C) 1988-2002 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+IR
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+ir        EPM7032LC44-6    17       16       0      16      0           50 %
+
+User Pins:                 17       16       0  
+
+
+
+Project Information                               f:\files\freezing-cpu\ir.rpt
+
+** AUTO GLOBAL SIGNALS **
+
+
+
+INFO: Signal 'CLK' chosen for auto global Clock
+
+
+Device-Specific Information:                      f:\files\freezing-cpu\ir.rpt
+ir
+
+***** Logic for device 'ir' compiled without errors.
+
+
+
+
+Device: EPM7032LC44-6
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+
+
+
+Device-Specific Information:                      f:\files\freezing-cpu\ir.rpt
+ir
+
+** ERROR SUMMARY **
+
+Info: Chip 'ir' in device 'EPM7032LC44-6' has less than 20% of pins available for future logic changes -- if your project is likely to change, Altera recommends using a larger device
+         D  D  D  V  G  G  G  C  G        
+         1  1  1  C  N  N  N  L  N  Q  Q  
+         3  4  5  C  D  D  D  K  D  5  6  
+       -----------------------------------_ 
+     /   6  5  4  3  2  1 44 43 42 41 40   | 
+D12 |  7                                39 | Q12 
+D11 |  8                                38 | Q7 
+D10 |  9                                37 | Q8 
+GND | 10                                36 | Q11 
+ D9 | 11                                35 | VCC 
+ D8 | 12         EPM7032LC44-6          34 | Q9 
+ D7 | 13                                33 | Q13 
+ D0 | 14                                32 | Q4 
+VCC | 15                                31 | Q10 
+ D1 | 16                                30 | GND 
+ D2 | 17                                29 | Q3 
+    |_  18 19 20 21 22 23 24 25 26 27 28  _| 
+      ------------------------------------ 
+         D  D  D  D  G  V  Q  Q  Q  Q  Q  
+         3  4  5  6  N  C  1  1  0  2  1  
+                     D  C     5        4  
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+
+
+Device-Specific Information:                      f:\files\freezing-cpu\ir.rpt
+ir
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16     0/16(  0%)  16/16(100%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32    16/16(100%)  16/16(100%)   0/16(  0%)  16/36( 44%) 
+
+
+Total dedicated input pins used:                 1/4      ( 25%)
+Total I/O pins used:                            32/32     (100%)
+Total logic cells used:                         16/32     ( 50%)
+Total shareable expanders used:                  0/32     (  0%)
+Total Turbo logic cells used:                   16/32     ( 50%)
+Total shareable expanders not available (n/a):   0/32     (  0%)
+Average fan-in:                                  2.00
+Total fan-in:                                    32
+
+Total input pins required:                      17
+Total output pins required:                     16
+Total bidirectional pins required:               0
+Total logic cells required:                     16
+Total flipflops required:                       16
+Total product terms required:                   16
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:           0
+
+Synthesized logic cells:                         0/  32   (  0%)
+
+
+
+Device-Specific Information:                      f:\files\freezing-cpu\ir.rpt
+ir
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  43      -   -       INPUT  G            0      0   0    0    0    0    0  CLK
+  14   (10)  (A)      INPUT               0      0   0    0    0    1    0  D0
+  16   (11)  (A)      INPUT               0      0   0    0    0    1    0  D1
+  17   (12)  (A)      INPUT               0      0   0    0    0    1    0  D2
+  18   (13)  (A)      INPUT               0      0   0    0    0    1    0  D3
+  19   (14)  (A)      INPUT               0      0   0    0    0    1    0  D4
+  20   (15)  (A)      INPUT               0      0   0    0    0    1    0  D5
+  21   (16)  (A)      INPUT               0      0   0    0    0    1    0  D6
+  13    (9)  (A)      INPUT               0      0   0    0    0    1    0  D7
+  12    (8)  (A)      INPUT               0      0   0    0    0    1    0  D8
+  11    (7)  (A)      INPUT               0      0   0    0    0    1    0  D9
+   9    (6)  (A)      INPUT               0      0   0    0    0    1    0  D10
+   8    (5)  (A)      INPUT               0      0   0    0    0    1    0  D11
+   7    (4)  (A)      INPUT               0      0   0    0    0    1    0  D12
+   6    (3)  (A)      INPUT               0      0   0    0    0    1    0  D13
+   5    (2)  (A)      INPUT               0      0   0    0    0    1    0  D14
+   4    (1)  (A)      INPUT               0      0   0    0    0    1    0  D15
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
+
+
+Device-Specific Information:                      f:\files\freezing-cpu\ir.rpt
+ir
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  26     30    B         FF   +  t        0      0   0    1    0    0    0  Q0
+  24     32    B         FF   +  t        0      0   0    1    0    0    0  Q1
+  27     29    B         FF   +  t        0      0   0    1    0    0    0  Q2
+  29     27    B         FF   +  t        0      0   0    1    0    0    0  Q3
+  32     25    B         FF   +  t        0      0   0    1    0    0    0  Q4
+  41     17    B         FF   +  t        0      0   0    1    0    0    0  Q5
+  40     18    B         FF   +  t        0      0   0    1    0    0    0  Q6
+  38     20    B         FF   +  t        0      0   0    1    0    0    0  Q7
+  37     21    B         FF   +  t        0      0   0    1    0    0    0  Q8
+  34     23    B         FF   +  t        0      0   0    1    0    0    0  Q9
+  31     26    B         FF   +  t        0      0   0    1    0    0    0  Q10
+  36     22    B         FF   +  t        0      0   0    1    0    0    0  Q11
+  39     19    B         FF   +  t        0      0   0    1    0    0    0  Q12
+  33     24    B         FF   +  t        0      0   0    1    0    0    0  Q13
+  28     28    B         FF   +  t        0      0   0    1    0    0    0  Q14
+  25     31    B         FF   +  t        0      0   0    1    0    0    0  Q15
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                      f:\files\freezing-cpu\ir.rpt
+ir
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                                         Logic cells placed in LAB 'B'
+        +------------------------------- LC30 Q0
+        | +----------------------------- LC32 Q1
+        | | +--------------------------- LC29 Q2
+        | | | +------------------------- LC27 Q3
+        | | | | +----------------------- LC25 Q4
+        | | | | | +--------------------- LC17 Q5
+        | | | | | | +------------------- LC18 Q6
+        | | | | | | | +----------------- LC20 Q7
+        | | | | | | | | +--------------- LC21 Q8
+        | | | | | | | | | +------------- LC23 Q9
+        | | | | | | | | | | +----------- LC26 Q10
+        | | | | | | | | | | | +--------- LC22 Q11
+        | | | | | | | | | | | | +------- LC19 Q12
+        | | | | | | | | | | | | | +----- LC24 Q13
+        | | | | | | | | | | | | | | +--- LC28 Q14
+        | | | | | | | | | | | | | | | +- LC31 Q15
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | | | | | | | A B |     Logic cells that feed LAB 'B':
+
+Pin
+43   -> - - - - - - - - - - - - - - - - | - - | <-- CLK
+14   -> * - - - - - - - - - - - - - - - | - * | <-- D0
+16   -> - * - - - - - - - - - - - - - - | - * | <-- D1
+17   -> - - * - - - - - - - - - - - - - | - * | <-- D2
+18   -> - - - * - - - - - - - - - - - - | - * | <-- D3
+19   -> - - - - * - - - - - - - - - - - | - * | <-- D4
+20   -> - - - - - * - - - - - - - - - - | - * | <-- D5
+21   -> - - - - - - * - - - - - - - - - | - * | <-- D6
+13   -> - - - - - - - * - - - - - - - - | - * | <-- D7
+12   -> - - - - - - - - * - - - - - - - | - * | <-- D8
+11   -> - - - - - - - - - * - - - - - - | - * | <-- D9
+9    -> - - - - - - - - - - * - - - - - | - * | <-- D10
+8    -> - - - - - - - - - - - * - - - - | - * | <-- D11
+7    -> - - - - - - - - - - - - * - - - | - * | <-- D12
+6    -> - - - - - - - - - - - - - * - - | - * | <-- D13
+5    -> - - - - - - - - - - - - - - * - | - * | <-- D14
+4    -> - - - - - - - - - - - - - - - * | - * | <-- D15
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                      f:\files\freezing-cpu\ir.rpt
+ir
+
+** EQUATIONS **
+
+CLK      : INPUT;
+D0       : INPUT;
+D1       : INPUT;
+D2       : INPUT;
+D3       : INPUT;
+D4       : INPUT;
+D5       : INPUT;
+D6       : INPUT;
+D7       : INPUT;
+D8       : INPUT;
+D9       : INPUT;
+D10      : INPUT;
+D11      : INPUT;
+D12      : INPUT;
+D13      : INPUT;
+D14      : INPUT;
+D15      : INPUT;
+
+-- Node name is 'Q0' = ':48' 
+-- Equation name is 'Q0', type is output 
+ Q0      = DFFE( D0 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+-- Node name is 'Q1' = ':46' 
+-- Equation name is 'Q1', type is output 
+ Q1      = DFFE( D1 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+-- Node name is 'Q2' = ':44' 
+-- Equation name is 'Q2', type is output 
+ Q2      = DFFE( D2 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+-- Node name is 'Q3' = ':42' 
+-- Equation name is 'Q3', type is output 
+ Q3      = DFFE( D3 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+-- Node name is 'Q4' = ':40' 
+-- Equation name is 'Q4', type is output 
+ Q4      = DFFE( D4 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+-- Node name is 'Q5' = ':38' 
+-- Equation name is 'Q5', type is output 
+ Q5      = DFFE( D5 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+-- Node name is 'Q6' = ':36' 
+-- Equation name is 'Q6', type is output 
+ Q6      = DFFE( D6 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+-- Node name is 'Q7' = ':34' 
+-- Equation name is 'Q7', type is output 
+ Q7      = DFFE( D7 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+-- Node name is 'Q8' = ':32' 
+-- Equation name is 'Q8', type is output 
+ Q8      = DFFE( D8 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+-- Node name is 'Q9' = ':30' 
+-- Equation name is 'Q9', type is output 
+ Q9      = DFFE( D9 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+-- Node name is 'Q10' = ':28' 
+-- Equation name is 'Q10', type is output 
+ Q10     = DFFE( D10 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+-- Node name is 'Q11' = ':26' 
+-- Equation name is 'Q11', type is output 
+ Q11     = DFFE( D11 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+-- Node name is 'Q12' = ':24' 
+-- Equation name is 'Q12', type is output 
+ Q12     = DFFE( D12 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+-- Node name is 'Q13' = ':22' 
+-- Equation name is 'Q13', type is output 
+ Q13     = DFFE( D13 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+-- Node name is 'Q14' = ':20' 
+-- Equation name is 'Q14', type is output 
+ Q14     = DFFE( D14 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+-- Node name is 'Q15' = ':18' 
+-- Equation name is 'Q15', type is output 
+ Q15     = DFFE( D15 $  GND, GLOBAL( CLK),  VCC,  VCC,  VCC);
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information                               f:\files\freezing-cpu\ir.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = off
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:00
+   Fitter                                 00:00:00
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:00
+   --------------------------             --------
+   Total Time                             00:00:00
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 3,405K

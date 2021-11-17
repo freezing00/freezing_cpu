@@ -1,0 +1,74 @@
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "mux3_1" ASSIGNED TO AN EPM7032LC44-6
+GND                              : 1
+GND                              : 2
+VCC                              : 3
+SW_B                             : 4
+FEN2OUT6                         : 5
+FEN2OUT7                         : 6
+INBUS0                           : 7
+INBUS1                           : 8
+INBUS2                           : 9
+GND                              : 10
+INBUS3                           : 11
+INBUS4                           : 12
+INBUS5                           : 13
+INBUS6                           : 14
+VCC                              : 15
+INBUS7                           : 16
+RAM_B                            : 17
+RAMOUT0                          : 18
+RAMOUT1                          : 19
+RAMOUT2                          : 20
+RAMOUT3                          : 21
+GND                              : 22
+VCC                              : 23
+DBUS0                            : 24
+FEN2OUT2                         : 25
+DBUS5                            : 26
+FEN2OUT3                         : 27
+DBUS4                            : 28
+FEN2OUT4                         : 29
+GND                              : 30
+DBUS3                            : 31
+FEN2OUT5                         : 32
+DBUS2                            : 33
+DBUS1                            : 34
+VCC                              : 35
+RAMOUT7                          : 36
+RAMOUT6                          : 37
+FEN2OUT0                         : 38
+FEN2OUT1                         : 39
+DBUS7                            : 40
+DBUS6                            : 41
+GND                              : 42
+RAMOUT4                          : 43
+RAMOUT5                          : 44

@@ -1,0 +1,502 @@
+Project Information                               f:\files\freezing-cpu\pc.rpt
+
+MAX+plus II Compiler Report File
+Version 10.2 07/10/2002
+Compiled: 06/29/2021 16:19:47
+
+Copyright (C) 1988-2002 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+PC
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+pc        EPM7032LC44-6    11       8        0      15      0           46 %
+
+User Pins:                 11       8        0  
+
+
+
+Project Information                               f:\files\freezing-cpu\pc.rpt
+
+** AUTO GLOBAL SIGNALS **
+
+
+
+INFO: Signal 'LDPC' chosen for auto global Clock
+INFO: Signal 'CLR' chosen for auto global Clear
+
+
+Project Information                               f:\files\freezing-cpu\pc.rpt
+
+** FILE HIERARCHY **
+
+
+
+|lpm_add_sub:132|
+|lpm_add_sub:132|addcore:adder|
+|lpm_add_sub:132|altshift:result_ext_latency_ffs|
+|lpm_add_sub:132|altshift:carry_ext_latency_ffs|
+|lpm_add_sub:132|altshift:oflow_ext_latency_ffs|
+
+
+Device-Specific Information:                      f:\files\freezing-cpu\pc.rpt
+pc
+
+***** Logic for device 'pc' compiled without errors.
+
+
+
+
+Device: EPM7032LC44-6
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+
+                                               
+                                               
+                                               
+                                               
+                    L              L           
+                    O  V  G  C  G  D  G        
+              D  D  A  C  N  L  N  P  N  Q  Q  
+              6  7  D  C  D  R  D  C  D  2  3  
+            -----------------------------------_ 
+          /   6  5  4  3  2  1 44 43 42 41 40   | 
+      D5 |  7                                39 | Q4 
+      D4 |  8                                38 | Q5 
+      D3 |  9                                37 | Q6 
+     GND | 10                                36 | Q7 
+      D2 | 11                                35 | VCC 
+      D1 | 12         EPM7032LC44-6          34 | Q1 
+      D0 | 13                                33 | Q0 
+RESERVED | 14                                32 | RESERVED 
+     VCC | 15                                31 | RESERVED 
+RESERVED | 16                                30 | GND 
+RESERVED | 17                                29 | RESERVED 
+         |_  18 19 20 21 22 23 24 25 26 27 28  _| 
+           ------------------------------------ 
+              R  R  R  R  G  V  R  R  R  R  R  
+              E  E  E  E  N  C  E  E  E  E  E  
+              S  S  S  S  D  C  S  S  S  S  S  
+              E  E  E  E        E  E  E  E  E  
+              R  R  R  R        R  R  R  R  R  
+              V  V  V  V        V  V  V  V  V  
+              E  E  E  E        E  E  E  E  E  
+              D  D  D  D        D  D  D  D  D  
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+
+
+Device-Specific Information:                      f:\files\freezing-cpu\pc.rpt
+pc
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16     0/16(  0%)   9/16( 56%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32    15/16( 93%)   8/16( 50%)   0/16(  0%)  24/36( 66%) 
+
+
+Total dedicated input pins used:                 2/4      ( 50%)
+Total I/O pins used:                            17/32     ( 53%)
+Total logic cells used:                         15/32     ( 46%)
+Total shareable expanders used:                  0/32     (  0%)
+Total Turbo logic cells used:                   15/32     ( 46%)
+Total shareable expanders not available (n/a):   0/32     (  0%)
+Average fan-in:                                  5.00
+Total fan-in:                                    75
+
+Total input pins required:                      11
+Total output pins required:                      8
+Total bidirectional pins required:               0
+Total logic cells required:                     15
+Total flipflops required:                        8
+Total product terms required:                   30
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:           0
+
+Synthesized logic cells:                         0/  32   (  0%)
+
+
+
+Device-Specific Information:                      f:\files\freezing-cpu\pc.rpt
+pc
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+   1      -   -       INPUT  G            0      0   0    0    0    0    0  CLR
+  13    (9)  (A)      INPUT               0      0   0    0    0    1    0  D0
+  12    (8)  (A)      INPUT               0      0   0    0    0    1    0  D1
+  11    (7)  (A)      INPUT               0      0   0    0    0    1    0  D2
+   9    (6)  (A)      INPUT               0      0   0    0    0    1    0  D3
+   8    (5)  (A)      INPUT               0      0   0    0    0    1    0  D4
+   7    (4)  (A)      INPUT               0      0   0    0    0    1    0  D5
+   6    (3)  (A)      INPUT               0      0   0    0    0    1    0  D6
+   5    (2)  (A)      INPUT               0      0   0    0    0    1    0  D7
+  43      -   -       INPUT  G            0      0   0    0    0    0    0  LDPC
+   4    (1)  (A)      INPUT               0      0   0    0    0    8    0  LOAD
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
+
+
+Device-Specific Information:                      f:\files\freezing-cpu\pc.rpt
+pc
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  33     24    B         FF   +  t        0      0   0    2    1    1    7  Q0 (:27)
+  34     23    B         FF   +  t        0      0   0    2    1    0    7  Q1 (:26)
+  41     17    B         FF   +  t        0      0   0    2    1    0    6  Q2 (:25)
+  40     18    B         FF   +  t        0      0   0    2    1    0    5  Q3 (:24)
+  39     19    B         FF   +  t        0      0   0    2    1    0    4  Q4 (:23)
+  38     20    B         FF   +  t        0      0   0    2    1    0    3  Q5 (:22)
+  37     21    B         FF   +  t        0      0   0    2    1    0    2  Q6 (:21)
+  36     22    B         FF   +  t        0      0   0    2    1    0    1  Q7 (:20)
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                      f:\files\freezing-cpu\pc.rpt
+pc
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+ (31)    26    B       SOFT      t        0      0   0    0    2    1    0  |LPM_ADD_SUB:132|addcore:adder|result_node1
+ (26)    30    B       SOFT      t        0      0   0    0    3    1    0  |LPM_ADD_SUB:132|addcore:adder|result_node2
+ (25)    31    B       SOFT      t        0      0   0    0    4    1    0  |LPM_ADD_SUB:132|addcore:adder|result_node3
+ (32)    25    B       SOFT      t        0      0   0    0    5    1    0  |LPM_ADD_SUB:132|addcore:adder|result_node4
+ (28)    28    B       SOFT      t        0      0   0    0    6    1    0  |LPM_ADD_SUB:132|addcore:adder|result_node5
+ (29)    27    B       SOFT      t        0      0   0    0    7    1    0  |LPM_ADD_SUB:132|addcore:adder|result_node6
+ (27)    29    B       SOFT      t        0      0   0    0    8    1    0  |LPM_ADD_SUB:132|addcore:adder|result_node7
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                      f:\files\freezing-cpu\pc.rpt
+pc
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                                       Logic cells placed in LAB 'B'
+        +----------------------------- LC26 |LPM_ADD_SUB:132|addcore:adder|result_node1
+        | +--------------------------- LC30 |LPM_ADD_SUB:132|addcore:adder|result_node2
+        | | +------------------------- LC31 |LPM_ADD_SUB:132|addcore:adder|result_node3
+        | | | +----------------------- LC25 |LPM_ADD_SUB:132|addcore:adder|result_node4
+        | | | | +--------------------- LC28 |LPM_ADD_SUB:132|addcore:adder|result_node5
+        | | | | | +------------------- LC27 |LPM_ADD_SUB:132|addcore:adder|result_node6
+        | | | | | | +----------------- LC29 |LPM_ADD_SUB:132|addcore:adder|result_node7
+        | | | | | | | +--------------- LC24 Q0
+        | | | | | | | | +------------- LC23 Q1
+        | | | | | | | | | +----------- LC17 Q2
+        | | | | | | | | | | +--------- LC18 Q3
+        | | | | | | | | | | | +------- LC19 Q4
+        | | | | | | | | | | | | +----- LC20 Q5
+        | | | | | | | | | | | | | +--- LC21 Q6
+        | | | | | | | | | | | | | | +- LC22 Q7
+        | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | | | | | | A B |     Logic cells that feed LAB 'B':
+LC26 -> - - - - - - - - * - - - - - - | - * | <-- |LPM_ADD_SUB:132|addcore:adder|result_node1
+LC30 -> - - - - - - - - - * - - - - - | - * | <-- |LPM_ADD_SUB:132|addcore:adder|result_node2
+LC31 -> - - - - - - - - - - * - - - - | - * | <-- |LPM_ADD_SUB:132|addcore:adder|result_node3
+LC25 -> - - - - - - - - - - - * - - - | - * | <-- |LPM_ADD_SUB:132|addcore:adder|result_node4
+LC28 -> - - - - - - - - - - - - * - - | - * | <-- |LPM_ADD_SUB:132|addcore:adder|result_node5
+LC27 -> - - - - - - - - - - - - - * - | - * | <-- |LPM_ADD_SUB:132|addcore:adder|result_node6
+LC29 -> - - - - - - - - - - - - - - * | - * | <-- |LPM_ADD_SUB:132|addcore:adder|result_node7
+LC24 -> * * * * * * * * - - - - - - - | - * | <-- Q0
+LC23 -> * * * * * * * - - - - - - - - | - * | <-- Q1
+LC17 -> - * * * * * * - - - - - - - - | - * | <-- Q2
+LC18 -> - - * * * * * - - - - - - - - | - * | <-- Q3
+LC19 -> - - - * * * * - - - - - - - - | - * | <-- Q4
+LC20 -> - - - - * * * - - - - - - - - | - * | <-- Q5
+LC21 -> - - - - - * * - - - - - - - - | - * | <-- Q6
+LC22 -> - - - - - - * - - - - - - - - | - * | <-- Q7
+
+Pin
+1    -> - - - - - - - - - - - - - - - | - - | <-- CLR
+13   -> - - - - - - - * - - - - - - - | - * | <-- D0
+12   -> - - - - - - - - * - - - - - - | - * | <-- D1
+11   -> - - - - - - - - - * - - - - - | - * | <-- D2
+9    -> - - - - - - - - - - * - - - - | - * | <-- D3
+8    -> - - - - - - - - - - - * - - - | - * | <-- D4
+7    -> - - - - - - - - - - - - * - - | - * | <-- D5
+6    -> - - - - - - - - - - - - - * - | - * | <-- D6
+5    -> - - - - - - - - - - - - - - * | - * | <-- D7
+43   -> - - - - - - - - - - - - - - - | - - | <-- LDPC
+4    -> - - - - - - - * * * * * * * * | - * | <-- LOAD
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                      f:\files\freezing-cpu\pc.rpt
+pc
+
+** EQUATIONS **
+
+CLR      : INPUT;
+D0       : INPUT;
+D1       : INPUT;
+D2       : INPUT;
+D3       : INPUT;
+D4       : INPUT;
+D5       : INPUT;
+D6       : INPUT;
+D7       : INPUT;
+LDPC     : INPUT;
+LOAD     : INPUT;
+
+-- Node name is 'Q0' = 'QOUT0' 
+-- Equation name is 'Q0', location is LC024, type is output.
+ Q0      = DFFE( _EQ001 $  GND, GLOBAL( LDPC), GLOBAL( CLR),  VCC,  VCC);
+  _EQ001 =  LOAD & !Q0
+         #  D0 & !LOAD;
+
+-- Node name is 'Q1' = 'QOUT1' 
+-- Equation name is 'Q1', location is LC023, type is output.
+ Q1      = DFFE( _EQ002 $  GND, GLOBAL( LDPC), GLOBAL( CLR),  VCC,  VCC);
+  _EQ002 =  _LC026 &  LOAD
+         #  D1 & !LOAD;
+
+-- Node name is 'Q2' = 'QOUT2' 
+-- Equation name is 'Q2', location is LC017, type is output.
+ Q2      = DFFE( _EQ003 $  GND, GLOBAL( LDPC), GLOBAL( CLR),  VCC,  VCC);
+  _EQ003 =  _LC030 &  LOAD
+         #  D2 & !LOAD;
+
+-- Node name is 'Q3' = 'QOUT3' 
+-- Equation name is 'Q3', location is LC018, type is output.
+ Q3      = DFFE( _EQ004 $  GND, GLOBAL( LDPC), GLOBAL( CLR),  VCC,  VCC);
+  _EQ004 =  _LC031 &  LOAD
+         #  D3 & !LOAD;
+
+-- Node name is 'Q4' = 'QOUT4' 
+-- Equation name is 'Q4', location is LC019, type is output.
+ Q4      = DFFE( _EQ005 $  GND, GLOBAL( LDPC), GLOBAL( CLR),  VCC,  VCC);
+  _EQ005 =  _LC025 &  LOAD
+         #  D4 & !LOAD;
+
+-- Node name is 'Q5' = 'QOUT5' 
+-- Equation name is 'Q5', location is LC020, type is output.
+ Q5      = DFFE( _EQ006 $  GND, GLOBAL( LDPC), GLOBAL( CLR),  VCC,  VCC);
+  _EQ006 =  _LC028 &  LOAD
+         #  D5 & !LOAD;
+
+-- Node name is 'Q6' = 'QOUT6' 
+-- Equation name is 'Q6', location is LC021, type is output.
+ Q6      = DFFE( _EQ007 $  GND, GLOBAL( LDPC), GLOBAL( CLR),  VCC,  VCC);
+  _EQ007 =  _LC027 &  LOAD
+         #  D6 & !LOAD;
+
+-- Node name is 'Q7' = 'QOUT7' 
+-- Equation name is 'Q7', location is LC022, type is output.
+ Q7      = DFFE( _EQ008 $  GND, GLOBAL( LDPC), GLOBAL( CLR),  VCC,  VCC);
+  _EQ008 =  _LC029 &  LOAD
+         #  D7 & !LOAD;
+
+-- Node name is '|LPM_ADD_SUB:132|addcore:adder|result_node1' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC026', type is buried 
+_LC026   = LCELL( Q1 $  Q0);
+
+-- Node name is '|LPM_ADD_SUB:132|addcore:adder|result_node2' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC030', type is buried 
+_LC030   = LCELL( Q2 $  _EQ009);
+  _EQ009 =  Q0 &  Q1;
+
+-- Node name is '|LPM_ADD_SUB:132|addcore:adder|result_node3' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC031', type is buried 
+_LC031   = LCELL( Q3 $  _EQ010);
+  _EQ010 =  Q0 &  Q1 &  Q2;
+
+-- Node name is '|LPM_ADD_SUB:132|addcore:adder|result_node4' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC025', type is buried 
+_LC025   = LCELL( Q4 $  _EQ011);
+  _EQ011 =  Q0 &  Q1 &  Q2 &  Q3;
+
+-- Node name is '|LPM_ADD_SUB:132|addcore:adder|result_node5' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC028', type is buried 
+_LC028   = LCELL( Q5 $  _EQ012);
+  _EQ012 =  Q0 &  Q1 &  Q2 &  Q3 &  Q4;
+
+-- Node name is '|LPM_ADD_SUB:132|addcore:adder|result_node6' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC027', type is buried 
+_LC027   = LCELL( Q6 $  _EQ013);
+  _EQ013 =  Q0 &  Q1 &  Q2 &  Q3 &  Q4 &  Q5;
+
+-- Node name is '|LPM_ADD_SUB:132|addcore:adder|result_node7' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC029', type is buried 
+_LC029   = LCELL( Q7 $  _EQ014);
+  _EQ014 =  Q0 &  Q1 &  Q2 &  Q3 &  Q4 &  Q5 &  Q6;
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information                               f:\files\freezing-cpu\pc.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = off
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:01
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:00
+   Fitter                                 00:00:00
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:00
+   --------------------------             --------
+   Total Time                             00:00:01
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 3,438K

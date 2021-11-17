@@ -1,0 +1,74 @@
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "controm" ASSIGNED TO AN EPM7032LC44-6
+GND                              : 1
+GND                              : 2
+VCC                              : 3
+UA4                              : 4
+ADDR5                            : 5
+ADDR4                            : 6
+ADDR3                            : 7
+ADDR2                            : 8
+ADDR1                            : 9
+GND                              : 10
+UA1                              : 11
+UA0                              : 12
+O20                              : 13
+O19                              : 14
+VCC                              : 15
+O18                              : 16
+UA3                              : 17
+O5                               : 18
+UA5                              : 19
+O6                               : 20
+UA2                              : 21
+GND                              : 22
+VCC                              : 23
+O3                               : 24
+O2                               : 25
+O0                               : 26
+O4                               : 27
+O1                               : 28
+O17                              : 29
+GND                              : 30
+O7                               : 31
+O8                               : 32
+O16                              : 33
+O15                              : 34
+VCC                              : 35
+O14                              : 36
+O13                              : 37
+O12                              : 38
+O11                              : 39
+O10                              : 40
+O9                               : 41
+GND                              : 42
+ADDR0                            : 43
+GND                              : 44

@@ -1,0 +1,287 @@
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (2.5 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (2.5 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "top" ASSIGNED TO AN EP1K30FC256-1
+DATA0                            : A1
+R36                              : A2
+GND                              : A3
+RESERVED                         : A4
+Q2                               : A5
+DBUS0                            : A6
+RESERVED                         : A7
+RESERVED                         : A8
+CLK                              : A9
+R06                              : A10
+X3                               : A11
+DBUS6                            : A12
+R21                              : A13
+GND                              : A14
+DBUS5                            : A15
+ALUOUT2                          : A16
+nCE                              : B1
+DCLK                             : B2
+R37                              : B3
+RESERVED                         : B4
+Q4                               : B5
+RESERVED                         : B6
+IR10                             : B7
+RESERVED                         : B8
+CLR                              : B9
+R03                              : B10
+PC4                              : B11
+RESERVED                         : B12
+R11                              : B13
+ADDR_B                           : B14
+TCK                              : B15
+nCEO                             : B16
+ALUOUT0                          : C1
+TDI                              : C2
+RESERVED                         : C3
+RESERVED                         : C4
+Y2                               : C5
+RESERVED                         : C6
+GND                              : C7
+IR2                              : C8
+ALUOUT3                          : C9
+R02                              : C10
+RSOUT0                           : C11
+T3                               : C12
+PC7                              : C13
+IR12                             : C14
+CONF_DONE                        : C15
+TDO                              : C16
+N.C.                             : D1
+PC0                              : D2
+DBUS4                            : D3
+IR5                              : D4
+R22                              : D5
+s0                               : D6
+RSOUT4                           : D7
+IR4                              : D8
+RESERVED                         : D9
+RSOUT3                           : D10
+RESERVED                         : D11
+VCCIO                            : D12
+R13                              : D13
+R15                              : D14
+LED_B                            : D15
+R23                              : D16
+R33                              : E1
+RESERVED                         : E2
+N.C.                             : E3
+RESERVED                         : E4
+GND                              : E5
+VCCIO                            : E6
+X4                               : E7
+INPUT0                           : E8
+s1                               : E9
+Y6                               : E10
+VCCINT                           : E11
+GND                              : E12
+PC2                              : E13
+RESERVED                         : E14
+R07                              : E15
+N.C.                             : E16
+R30                              : F1
+R14                              : F2
+PC3                              : F3
+PC1                              : F4
+VCCINT                           : F5
+GND                              : F6
+VCCINT                           : F7
+VCCIO                            : F8
+VCCINT                           : F9
+VCCIO                            : F10
+GND                              : F11
+VCCINT                           : F12
+DBUS3                            : F13
+R10                              : F14
+T4                               : F15
+R00                              : F16
+Y7                               : G1
+ALUOUT5                          : G2
+N.C.                             : G3
+R32                              : G4
+R12                              : G5
+VCCIO                            : G6
+GND                              : G7
+VCCIO                            : G8
+GND                              : G9
+GND                              : G10
+VCCIO                            : G11
+R20                              : G12
+RSOUT1                           : G13
+RSOUT5                           : G14
+X5                               : G15
+IR6                              : G16
+N.C.                             : H1
+Y5                               : H2
+Y3                               : H3
+R25                              : H4
+R04                              : H5
+VCCINT                           : H6
+VCCINT                           : H7
+GND                              : H8
+GND                              : H9
+VCCINT                           : H10
+VCCIO                            : H11
+ALUOUT7                          : H12
+ALUOUT6                          : H13
+OUTBUS6                          : H14
+Q0                               : H15
+N.C.                             : H16
+N.C.                             : J1
+RESERVED                         : J2
+DBUS1                            : J3
+Q6                               : J4
+OUTBUS7                          : J5
+VCCIO                            : J6
+VCCINT                           : J7
+GND                              : J8
+GND                              : J9
+VCCINT                           : J10
+VCCINT                           : J11
+INPUT5                           : J12
+DBUS7                            : J13
+Q7                               : J14
+INPUT7                           : J15
+Q5                               : J16
+Q3                               : K1
+OUTBUS5                          : K2
+N.C.                             : K3
+RESERVED                         : K4
+GND                              : K5
+VCCIO                            : K6
+GND                              : K7
+VCCIO                            : K8
+VCCINT                           : K9
+GND                              : K10
+VCCIO                            : K11
+INPUT6                           : K12
+R26                              : K13
+N.C.                             : K14
+RESERVED                         : K15
+N.C.                             : K16
+GND                              : L1
+N.C.                             : L2
+RESERVED                         : L3
+N.C.                             : L4
+VCCINT                           : L5
+GND                              : L6
+VCCINT                           : L7
+INPUT3                           : L8
+VCC_CKLK                         : L9
+VCCIO                            : L10
+GND                              : L11
+VCCINT                           : L12
+IR3                              : L13
+RSOUT6                           : L14
+RSOUT7                           : L15
+R27                              : L16
+OUTBUS1                          : M1
+IR1                              : M2
+OUTBUS3                          : M3
+OUTBUS0                          : M4
+GND                              : M5
+VCCIO                            : M6
+RESERVED                         : M7
+R24                              : M8
+INPUT1                           : M9
+X6                               : M10
+VCCINT                           : M11
+GND                              : M12
+OUTBUS2                          : M13
+N.C.                             : M14
+RAM_B                            : M15
+N.C.                             : M16
+X0                               : N1
+RS_B                             : N2
+OUTBUS4                          : N3
+nCONFIG                          : N4
+CF                               : N5
+RSOUT2                           : N6
+IR15                             : N7
+RESERVED                         : N8
+IR8                              : N9
+X7                               : N10
+Y0                               : N11
+VCCIO                            : N12
+Q1                               : N13
+RESERVED                         : N14
+N.C.                             : N15
+R16                              : N16
+MSEL0                            : P1
+INPUT4                           : P2
+RESERVED                         : P3
+IR14                             : P4
+IR0                              : P5
+RESERVED                         : P6
+CS_D                             : P7
+RESERVED                         : P8
+RESERVED                         : P9
+RESERVED                         : P10
+SW_B                             : P11
+ALUOUT4                          : P12
+PC6                              : P13
+Y1                               : P14
+TMS                              : P15
+RESERVED                         : P16
+MSEL1                            : R1
+VCCINT                           : R2
+LDAR                             : R3
+ZF                               : R4
+IR7                              : R5
+DBUS2                            : R6
+Y4                               : R7
+INPUT2                           : R8
+s2                               : R9
+R01                              : R10
+RESERVED                         : R11
+T2                               : R12
+ALUOUT1                          : R13
+IR11                             : R14
+RESERVED                         : R15
+TRST                             : R16
+R35                              : T1
+R34                              : T2
+R31                              : T3
+IR13                             : T4
+X2                               : T5
+RESERVED                         : T6
+RESERVED                         : T7
+GND_CKLK                         : T8
+RESERVED                         : T9
+R05                              : T10
+PC5                              : T11
+X1                               : T12
+R17                              : T13
+IR9                              : T14
+RD_D                             : T15
+nSTATUS                          : T16

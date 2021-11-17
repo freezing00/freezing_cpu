@@ -1,0 +1,454 @@
+Project Information                           f:\files\freezing-cpu\mux3_2.rpt
+
+MAX+plus II Compiler Report File
+Version 10.2 07/10/2002
+Compiled: 06/29/2021 14:46:42
+
+Copyright (C) 1988-2002 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+MUX3_2
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+mux3_2    EPM7032LC44-6    27       8        0      8       0           25 %
+
+User Pins:                 27       8        0  
+
+
+
+Device-Specific Information:                  f:\files\freezing-cpu\mux3_2.rpt
+mux3_2
+
+***** Logic for device 'mux3_2' compiled without errors.
+
+
+
+
+Device: EPM7032LC44-6
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+
+
+
+Device-Specific Information:                  f:\files\freezing-cpu\mux3_2.rpt
+mux3_2
+
+** ERROR SUMMARY **
+
+Info: Chip 'mux3_2' in device 'EPM7032LC44-6' has less than 20% of pins available for future logic changes -- if your project is likely to change, Altera recommends using a larger device
+                               A  A           
+                   A           L  L           
+             A  A  D        A  U  U     D  D  
+             O  O  D        O  O  O     B  B  
+             U  U  R  V  G  U  U  U  G  U  U  
+             T  T  _  C  N  T  T  T  N  S  S  
+             6  5  B  C  D  0  4  5  D  4  2  
+           -----------------------------------_ 
+         /   6  5  4  3  2  1 44 43 42 41 40   | 
+  AOUT7 |  7                                39 | DBUS3 
+ RSOUT7 |  8                                38 | AOUT1 
+   RS_B |  9                                37 | ALUOUT3 
+    GND | 10                                36 | ALUOUT2 
+ RSOUT0 | 11                                35 | VCC 
+ RSOUT1 | 12         EPM7032LC44-6          34 | AOUT2 
+ RSOUT2 | 13                                33 | DBUS7 
+ RSOUT3 | 14                                32 | ALUOUT7 
+    VCC | 15                                31 | DBUS6 
+ RSOUT4 | 16                                30 | GND 
+ RSOUT5 | 17                                29 | ALUOUT1 
+        |_  18 19 20 21 22 23 24 25 26 27 28  _| 
+          ------------------------------------ 
+             R  A  A  A  G  V  D  A  D  A  D  
+             S  O  O  L  N  C  B  L  B  L  B  
+             O  U  U  U  D  C  U  U  U  U  U  
+             U  T  T  O        S  _  S  O  S  
+             T  4  3  U        1  B  0  U  5  
+             6        T                 T     
+                      6                 0     
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+
+
+Device-Specific Information:                  f:\files\freezing-cpu\mux3_2.rpt
+mux3_2
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16     0/16(  0%)  16/16(100%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32     8/16( 50%)  16/16(100%)   0/16(  0%)  27/36( 75%) 
+
+
+Total dedicated input pins used:                 3/4      ( 75%)
+Total I/O pins used:                            32/32     (100%)
+Total logic cells used:                          8/32     ( 25%)
+Total shareable expanders used:                  0/32     (  0%)
+Total Turbo logic cells used:                    8/32     ( 25%)
+Total shareable expanders not available (n/a):   0/32     (  0%)
+Average fan-in:                                  6.00
+Total fan-in:                                    48
+
+Total input pins required:                      27
+Total output pins required:                      8
+Total bidirectional pins required:               0
+Total logic cells required:                      8
+Total flipflops required:                        0
+Total product terms required:                   24
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:           0
+
+Synthesized logic cells:                         0/  32   (  0%)
+
+
+
+Device-Specific Information:                  f:\files\freezing-cpu\mux3_2.rpt
+mux3_2
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+   4    (1)  (A)      INPUT               0      0   0    0    0    8    0  ADDR_B
+  25   (31)  (B)      INPUT               0      0   0    0    0    8    0  ALU_B
+  27   (29)  (B)      INPUT               0      0   0    0    0    1    0  ALUOUT0
+  29   (27)  (B)      INPUT               0      0   0    0    0    1    0  ALUOUT1
+  36   (22)  (B)      INPUT               0      0   0    0    0    1    0  ALUOUT2
+  37   (21)  (B)      INPUT               0      0   0    0    0    1    0  ALUOUT3
+  44      -   -       INPUT               0      0   0    0    0    1    0  ALUOUT4
+  43      -   -       INPUT               0      0   0    0    0    1    0  ALUOUT5
+  21   (16)  (A)      INPUT               0      0   0    0    0    1    0  ALUOUT6
+  32   (25)  (B)      INPUT               0      0   0    0    0    1    0  ALUOUT7
+   1      -   -       INPUT               0      0   0    0    0    1    0  AOUT0
+  38   (20)  (B)      INPUT               0      0   0    0    0    1    0  AOUT1
+  34   (23)  (B)      INPUT               0      0   0    0    0    1    0  AOUT2
+  20   (15)  (A)      INPUT               0      0   0    0    0    1    0  AOUT3
+  19   (14)  (A)      INPUT               0      0   0    0    0    1    0  AOUT4
+   5    (2)  (A)      INPUT               0      0   0    0    0    1    0  AOUT5
+   6    (3)  (A)      INPUT               0      0   0    0    0    1    0  AOUT6
+   7    (4)  (A)      INPUT               0      0   0    0    0    1    0  AOUT7
+   9    (6)  (A)      INPUT               0      0   0    0    0    8    0  RS_B
+  11    (7)  (A)      INPUT               0      0   0    0    0    1    0  RSOUT0
+  12    (8)  (A)      INPUT               0      0   0    0    0    1    0  RSOUT1
+  13    (9)  (A)      INPUT               0      0   0    0    0    1    0  RSOUT2
+  14   (10)  (A)      INPUT               0      0   0    0    0    1    0  RSOUT3
+  16   (11)  (A)      INPUT               0      0   0    0    0    1    0  RSOUT4
+  17   (12)  (A)      INPUT               0      0   0    0    0    1    0  RSOUT5
+  18   (13)  (A)      INPUT               0      0   0    0    0    1    0  RSOUT6
+   8    (5)  (A)      INPUT               0      0   0    0    0    1    0  RSOUT7
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                  f:\files\freezing-cpu\mux3_2.rpt
+mux3_2
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  26     30    B     OUTPUT      t        0      0   0    6    0    0    0  DBUS0
+  24     32    B     OUTPUT      t        0      0   0    6    0    0    0  DBUS1
+  40     18    B     OUTPUT      t        0      0   0    6    0    0    0  DBUS2
+  39     19    B     OUTPUT      t        0      0   0    6    0    0    0  DBUS3
+  41     17    B     OUTPUT      t        0      0   0    6    0    0    0  DBUS4
+  28     28    B     OUTPUT      t        0      0   0    6    0    0    0  DBUS5
+  31     26    B     OUTPUT      t        0      0   0    6    0    0    0  DBUS6
+  33     24    B     OUTPUT      t        0      0   0    6    0    0    0  DBUS7
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                  f:\files\freezing-cpu\mux3_2.rpt
+mux3_2
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                         Logic cells placed in LAB 'B'
+        +--------------- LC30 DBUS0
+        | +------------- LC32 DBUS1
+        | | +----------- LC18 DBUS2
+        | | | +--------- LC19 DBUS3
+        | | | | +------- LC17 DBUS4
+        | | | | | +----- LC28 DBUS5
+        | | | | | | +--- LC26 DBUS6
+        | | | | | | | +- LC24 DBUS7
+        | | | | | | | | 
+        | | | | | | | |   Other LABs fed by signals
+        | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | A B |     Logic cells that feed LAB 'B':
+
+Pin
+4    -> * * * * * * * * | - * | <-- ADDR_B
+25   -> * * * * * * * * | - * | <-- ALU_B
+27   -> * - - - - - - - | - * | <-- ALUOUT0
+29   -> - * - - - - - - | - * | <-- ALUOUT1
+36   -> - - * - - - - - | - * | <-- ALUOUT2
+37   -> - - - * - - - - | - * | <-- ALUOUT3
+44   -> - - - - * - - - | - * | <-- ALUOUT4
+43   -> - - - - - * - - | - * | <-- ALUOUT5
+21   -> - - - - - - * - | - * | <-- ALUOUT6
+32   -> - - - - - - - * | - * | <-- ALUOUT7
+1    -> * - - - - - - - | - * | <-- AOUT0
+38   -> - * - - - - - - | - * | <-- AOUT1
+34   -> - - * - - - - - | - * | <-- AOUT2
+20   -> - - - * - - - - | - * | <-- AOUT3
+19   -> - - - - * - - - | - * | <-- AOUT4
+5    -> - - - - - * - - | - * | <-- AOUT5
+6    -> - - - - - - * - | - * | <-- AOUT6
+7    -> - - - - - - - * | - * | <-- AOUT7
+9    -> * * * * * * * * | - * | <-- RS_B
+11   -> * - - - - - - - | - * | <-- RSOUT0
+12   -> - * - - - - - - | - * | <-- RSOUT1
+13   -> - - * - - - - - | - * | <-- RSOUT2
+14   -> - - - * - - - - | - * | <-- RSOUT3
+16   -> - - - - * - - - | - * | <-- RSOUT4
+17   -> - - - - - * - - | - * | <-- RSOUT5
+18   -> - - - - - - * - | - * | <-- RSOUT6
+8    -> - - - - - - - * | - * | <-- RSOUT7
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                  f:\files\freezing-cpu\mux3_2.rpt
+mux3_2
+
+** EQUATIONS **
+
+ADDR_B   : INPUT;
+ALU_B    : INPUT;
+ALUOUT0  : INPUT;
+ALUOUT1  : INPUT;
+ALUOUT2  : INPUT;
+ALUOUT3  : INPUT;
+ALUOUT4  : INPUT;
+ALUOUT5  : INPUT;
+ALUOUT6  : INPUT;
+ALUOUT7  : INPUT;
+AOUT0    : INPUT;
+AOUT1    : INPUT;
+AOUT2    : INPUT;
+AOUT3    : INPUT;
+AOUT4    : INPUT;
+AOUT5    : INPUT;
+AOUT6    : INPUT;
+AOUT7    : INPUT;
+RS_B     : INPUT;
+RSOUT0   : INPUT;
+RSOUT1   : INPUT;
+RSOUT2   : INPUT;
+RSOUT3   : INPUT;
+RSOUT4   : INPUT;
+RSOUT5   : INPUT;
+RSOUT6   : INPUT;
+RSOUT7   : INPUT;
+
+-- Node name is 'DBUS0' 
+-- Equation name is 'DBUS0', location is LC030, type is output.
+ DBUS0   = LCELL( _EQ001 $  GND);
+  _EQ001 = !ADDR_B &  ALU_B &  AOUT0 &  RS_B
+         #  ALU_B & !RS_B &  RSOUT0
+         # !ALU_B &  ALUOUT0;
+
+-- Node name is 'DBUS1' 
+-- Equation name is 'DBUS1', location is LC032, type is output.
+ DBUS1   = LCELL( _EQ002 $  GND);
+  _EQ002 = !ADDR_B &  ALU_B &  AOUT1 &  RS_B
+         #  ALU_B & !RS_B &  RSOUT1
+         # !ALU_B &  ALUOUT1;
+
+-- Node name is 'DBUS2' 
+-- Equation name is 'DBUS2', location is LC018, type is output.
+ DBUS2   = LCELL( _EQ003 $  GND);
+  _EQ003 = !ADDR_B &  ALU_B &  AOUT2 &  RS_B
+         #  ALU_B & !RS_B &  RSOUT2
+         # !ALU_B &  ALUOUT2;
+
+-- Node name is 'DBUS3' 
+-- Equation name is 'DBUS3', location is LC019, type is output.
+ DBUS3   = LCELL( _EQ004 $  GND);
+  _EQ004 = !ADDR_B &  ALU_B &  AOUT3 &  RS_B
+         #  ALU_B & !RS_B &  RSOUT3
+         # !ALU_B &  ALUOUT3;
+
+-- Node name is 'DBUS4' 
+-- Equation name is 'DBUS4', location is LC017, type is output.
+ DBUS4   = LCELL( _EQ005 $  GND);
+  _EQ005 = !ADDR_B &  ALU_B &  AOUT4 &  RS_B
+         #  ALU_B & !RS_B &  RSOUT4
+         # !ALU_B &  ALUOUT4;
+
+-- Node name is 'DBUS5' 
+-- Equation name is 'DBUS5', location is LC028, type is output.
+ DBUS5   = LCELL( _EQ006 $  GND);
+  _EQ006 = !ADDR_B &  ALU_B &  AOUT5 &  RS_B
+         #  ALU_B & !RS_B &  RSOUT5
+         # !ALU_B &  ALUOUT5;
+
+-- Node name is 'DBUS6' 
+-- Equation name is 'DBUS6', location is LC026, type is output.
+ DBUS6   = LCELL( _EQ007 $  GND);
+  _EQ007 = !ADDR_B &  ALU_B &  AOUT6 &  RS_B
+         #  ALU_B & !RS_B &  RSOUT6
+         # !ALU_B &  ALUOUT6;
+
+-- Node name is 'DBUS7' 
+-- Equation name is 'DBUS7', location is LC024, type is output.
+ DBUS7   = LCELL( _EQ008 $  GND);
+  _EQ008 = !ADDR_B &  ALU_B &  AOUT7 &  RS_B
+         #  ALU_B & !RS_B &  RSOUT7
+         # !ALU_B &  ALUOUT7;
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information                           f:\files\freezing-cpu\mux3_2.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = off
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:01
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:00
+   Fitter                                 00:00:00
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:00
+   --------------------------             --------
+   Total Time                             00:00:01
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 3,533K
